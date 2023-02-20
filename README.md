@@ -18,6 +18,7 @@ Variables
 
 * `variables.tf`
   * `separator`: Single character to separate segments in object's name.
+  * `space`: Single character to replace space where required.
   * `name`: The name of the resource group. Generated from tags if not set.
   * **`location`**: The Azure Region where the Resource Group should exist.
   * `tags_keys`: The list of tags keys.
