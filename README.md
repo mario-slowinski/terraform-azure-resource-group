@@ -1,12 +1,7 @@
-azurerm-resource-group
-======================
+azure-resource-group
+====================
 
 Terraform [Azure Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal).
-
-If `var.location` is:
-
-* **set** - create resource
-* **not set** - read existing resource data
 
 Required providers
 ------------------
@@ -41,8 +36,8 @@ Examples
 * `main.tf`
 
   ```terraform
-  module "azurerm_resource_group" {
-    sources = "github.com/mario-slowinski/terraform-azurerm-resource-group"
+  module "azure-resource-group" {
+    sources = "github.com/mario-slowinski/terraform-azure-resource-group"
   }
   ```
 
