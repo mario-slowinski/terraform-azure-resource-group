@@ -6,9 +6,5 @@ resource "azurerm_resource_group" "this" {
   )
   location = var.location
 
-  tags = length(var.tags) > 0 ? (
-    var.tags
-    ) : (
-    { for tag in local.tags : tag.key => tag.value }
-  )
+  tags = coalesce(var.tags, local.tags)
 }
