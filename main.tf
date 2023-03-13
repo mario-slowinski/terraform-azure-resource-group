@@ -6,5 +6,5 @@ resource "azurerm_resource_group" "this" {
   )
   location = var.location
 
-  tags = coalesce(var.tags, local.tags)
+  tags = merge(local.tags, var.tags)
 }
